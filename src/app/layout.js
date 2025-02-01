@@ -20,10 +20,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ja"> {/* 言語を日本語に変更 */}
+    <html lang="ja">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Header /> {/* ここでヘッダーを適用 */}
-        <NavBar /> {/* ここにメニューバーを追加 */}
+        <Header />
+        <NavBar />
         <main className="container mx-auto p-4">{children}</main>
       </body>
     </html>
