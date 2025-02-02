@@ -28,17 +28,17 @@ export default function AboutSection() {
           英語が壊滅的
           <span className="absolute left-0 bottom-0 w-full h-[8px] bg-yellow-300 -z-10"></span>
         </span>
-        な状態になってしまったら、一般的な予備校ではなかなか偏差値が上がらず、
+        な状態になってしまったら、一般的な塾・予備校ではなかなか偏差値が上がらず、
         志望校に合格できません。
         <br />
-        <span className="relative font-bold inline-block">
-          しかしRouteでは、そんな英弱の高校生の
+        <span className="relative font-bold inline-block">しかしRouteでは、経験豊富な東大卒プロ講師と英語学習習慣化に特化したAIがタッグを組んで、</span>
+          
+          そんな英弱の高校生の
           <span className="relative font-bold inline-block">
-          成績を跳ね上げて
+          成績を跳ね上げ
           <span className="absolute left-0 bottom-0 w-full h-[8px] bg-yellow-300 -z-10"></span>
         </span>
-          きました。
-        </span>
+          ます。
       </p>
     </section>
   );

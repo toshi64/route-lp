@@ -8,7 +8,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "Routeとは", path: "/about" },
+    { name: "Routeとは", path: "/" },
     { name: "言語教育の方針", path: "/concept" },
     { name: "指導システム", path: "/services" },
     { name: "対象生徒", path: "/students" },

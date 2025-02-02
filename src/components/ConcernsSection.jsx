@@ -3,16 +3,16 @@ import Image from "next/image";
 const concerns = [
   {
     title: "中学から英語が大の苦手",
-    image: "/struggle-1.jpg",
+    image: "/struggle-1.png",
     points: [
-      "英文を見るだけで<span class='highlight'>吐き気が・・・</span>",
+      "<span class='highlight'>英文を見るだけで吐き気が・・・</span>",
       "<span class='highlight'>中学の基礎</span>が分かっていない",
       "<span class='highlight'>単語だけ丸覚え</span>してテストを乗り切っている",
     ],
   },
   {
     title: "何からやるべきか分からない",
-    image: "/struggle-2.jpg",
+    image: "/struggle-2.png",
     points: [
       "映像教材や参考書を見ても、<span class='highlight'>できるようになる気がしない</span>",
       "自分だけで考えても、<span class='highlight'>何をやるか迷ってしまう</span>",
@@ -21,7 +21,7 @@ const concerns = [
   },
   {
     title: "単語も覚えられない",
-    image: "/struggle-3.jpg",
+    image: "/struggle-3.png",
     points: [
       "どうしても<span class='highlight'>単語が頭に入ってこない</span>",
       "ついつい<span class='highlight'>サボってしまいがち</span>",
@@ -33,19 +33,30 @@ const concerns = [
 export default function ConcernsSection() {
   return (
     <section className="max-w-4xl mx-auto my-12 px-6">
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">
-        1つでも当てはまるならご注意！<br />
-        <span className="text-lg text-gray-700">落ちこぼれ生徒の３つの特徴</span>
-      </h2>
+      {/* 見出し部分 */}
+      <div className="bg-red-50 p-4 sm:p-6 rounded-md border-l-4 border-red-700">
+        <h2 className="text-2xl font-bold text-gray-900 leading-snug">
+          1つでも当てはまるならご注意！
+        <p>
+          落ちこぼれ生徒の３つの特徴
+        </p>
+        </h2>
+      </div>
 
-      <div className="space-y-8">
+      {/* 各コンテンツ */}
+      <div className="space-y-8 mt-6">
         {concerns.map((concern, index) => (
           <ConcernItem key={index} title={concern.title} image={concern.image} points={concern.points} />
         ))}
       </div>
+
+      <p className="mt-6 text-lg sm:text-xl text-gray-800 leading-relaxed max-w-3xl mx-auto text-left">
+        上記の<span class='highlight'>英弱高校生</span>ならおまかせください！ <span class='highlight'>英語の偏差値を跳ね上げて</span>、志望校への合格を果たします。
+      </p>
     </section>
   );
 }
+
 
 function ConcernItem({ title, image, points }) {
   return (
